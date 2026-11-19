@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Navilux: descubre nuestro proyector de luz de Navidad y prepara tu hogar para las fiestas.">
+  <title>Navilux | Ilumina tu Navidad</title>
+  <style>
+    :root{--ink:#172033;--muted:#647084;--blue:#2459e6;--pale:#eef3ff;--line:#e7eaf0;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:#fff;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .top{background:#132b22;color:#fff;text-align:center;padding:9px 14px;font-size:13px;letter-spacing:.04em}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:auto;padding:0 24px;border-bottom:1px solid var(--line)}
+    .logo{font-size:29px;font-weight:850;letter-spacing:-1.5px}.logo span{color:var(--blue)}
+    nav{display:flex;gap:25px;color:#4c586a;font-size:14px}
+    .bag{border:1px solid var(--line);border-radius:30px;padding:10px 15px;font-size:14px}
+    main{max-width:1160px;margin:auto;padding:48px 24px 70px}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+    .photo{background:#f6f7fa;border-radius:25px;overflow:hidden;border:1px solid var(--line)}
+    .photo img{display:block;width:100%;height:510px;object-fit:cover;object-position:top}
+    .eyebrow{display:inline-flex;background:var(--pale);color:var(--blue);border-radius:30px;padding:8px 13px;font-size:12px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+    h1{font-size:clamp(38px,5vw,62px);line-height:1.03;letter-spacing:-.055em;margin:20px 0}
+    .lead{font-size:19px;line-height:1.65;color:var(--muted);max-width:510px}
+    .price{font-size:30px;font-weight:800;margin:25px 0 18px}
+    .price small{display:block;font-size:12px;font-weight:500;color:var(--muted);margin-top:5px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:white;border:0;border-radius:13px;padding:17px 25px;font-size:16px;font-weight:750;cursor:pointer;box-shadow:0 8px 22px #2459e629}
+    .btn:hover{filter:brightness(.95)} .secondary{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:none;margin-left:8px}
+    .checks{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:25px;color:#566276;font-size:14px}
+    .checks span:before{content:"✓";color:var(--blue);font-weight:900;margin-right:8px}
+    section{padding-top:90px}.section-head{text-align:center;max-width:650px;margin:0 auto 35px}
+    h2{font-size:clamp(29px,4vw,42px);letter-spacing:-.04em;margin:0 0 12px}
+    .section-head p{color:var(--muted);line-height:1.6}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{border:1px solid var(--line);border-radius:19px;padding:25px;background:#fff}
+    .ico{width:48px;height:48px;border-radius:14px;background:var(--pale);display:grid;place-items:center;color:var(--blue);font-size:23px}
+    .feature h3{margin:18px 0 8px;font-size:18px}.feature p{color:var(--muted);line-height:1.55;margin:0;font-size:14px}
+    .how{background:#f7f8fb;border-radius:24px;padding:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .step b{color:var(--blue);font-size:13px;letter-spacing:.1em}.step h3{margin:9px 0}.step p{color:var(--muted);line-height:1.5;font-size:14px}
+    .faq{max-width:760px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 2px}.faq summary{font-weight:700;cursor:pointer}.faq p{color:var(--muted);line-height:1.6}
+    .notice{margin-top:26px;padding:14px 16px;background:#fff8e8;border:1px solid #f4dfac;border-radius:12px;color:#70531a;font-size:13px;line-height:1.5}
+    footer{background:#111827;color:#d9deea;padding:35px 24px;text-align:center;font-size:13px}
+    .cartmsg{display:none;margin-top:14px;padding:12px;background:#edf8f0;border-radius:10px;color:#1e6534;font-size:14px}
+    @media(max-width:760px){header{padding:0 17px;height:68px}nav{display:none}.logo{font-size:26px}main{padding:28px 17px 55px}.hero{grid-template-columns:1fr;gap:27px}.photo img{height:360px}.lead{font-size:17px}.secondary{margin:9px 0 0;width:100%}.hero .btn{width:100%}.features{grid-template-columns:1fr}.how{grid-template-columns:1fr;padding:25px}.checks{gap:10px 15px}section{padding-top:65px}}
+  </style>
+</head>
+<body>
+  <div class="top">✨ PREPARA TU HOGAR PARA LA NAVIDAD ✨</div>
+  <header>
+    <a class="logo" href="#">Navi<span>lux</span></a>
+    <nav><a href="#producto">Producto</a><a href="#detalles">Características</a><a href="#faq">Preguntas frecuentes</a></nav>
+    <a class="bag" href="#producto">🛍 <span id="count">0</span></a>
+  </header>
+  <main>
+    <div class="hero" id="producto">
+      <div class="photo"><img src="proyector-navidad-referencia.jpg" alt="Imagen de referencia del proyector de luz de Navidad"></div>
+      <div>
+        <span class="eyebrow">Colección Navidad</span>
+        <h1>Ilumina tu Navidad de una forma especial.</h1>
+        <p class="lead">Dale un toque festivo a tu hogar con nuestro proyector de luz navideña. Una forma sencilla de añadir ambiente a tus celebraciones.</p>
+        <div class="price">Precio próximamente <small>El precio final y los gastos de envío se mostrarán antes de comprar.</small></div>
+        <button class="btn" onclick="addToCart()">Añadir al carrito</button>
+        <a class="btn secondary" href="#detalles">Descubrir el producto</a>
+        <div class="cartmsg" id="cartmsg">Producto añadido a la cesta de demostración. Los pagos todavía no están conectados.</div>
+        <div class="checks"><span>Diseño navideño</span><span>Conexión USB visible en la referencia</span><span>Ideal para decoración</span></div>
+      </div>
+    </div>
+    <section id="detalles">
+      <div class="section-head"><h2>Un toque de magia para estas fiestas</h2><p>Una presentación sencilla para descubrir el producto y sus detalles.</p></div>
+      <div class="features">
+        <article class="feature"><div class="ico">❄</div><h3>Ambiente navideño</h3><p>Una decoración luminosa para acompañar tus momentos especiales.</p></article>
+        <article class="feature"><div class="ico">✨</div><h3>Diseño festivo</h3><p>Motivos inspirados en la Navidad para dar un aire diferente a tu espacio.</p></article>
+        <article class="feature"><div class="ico">🔌</div><h3>Conexión USB</h3><p>La imagen de referencia muestra un conector USB. Comprueba las especificaciones exactas del proveedor.</p></article>
+      </div>
+    </section>
+    <section>
+      <div class="section-head"><h2>¿Cómo elegirlo?</h2><p>Antes de comprar, revisa los detalles y condiciones del producto.</p></div>
+      <div class="how">
+        <div class="step"><b>PASO 01</b><h3>Consulta los detalles</h3><p>Comprueba qué incluye el paquete y las especificaciones del modelo.</p></div>
+        <div class="step"><b>PASO 02</b><h3>Revisa el envío</h3><p>Confirma el plazo, el coste y la política de devoluciones.</p></div>
+        <div class="step"><b>PASO 03</b><h3>Prepara la Navidad</h3><p>Cuando la tienda tenga pagos activos, podrás completar tu pedido.</p></div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="section-head"><h2>Preguntas frecuentes</h2><p>Información que conviene confirmar antes de publicar la tienda.</p></div>
+      <div class="faq">
+        <details><summary>¿Qué incluye la caja?</summary><p>Añade aquí el contenido exacto del paquete cuando lo confirmes con el proveedor.</p></details>
+        <details><summary>¿Cuánto tarda el envío?</summary><p>Indica aquí el plazo real de entrega y la empresa de transporte.</p></details>
+        <details><summary>¿Se puede devolver?</summary><p>Publica aquí tu política de devoluciones y el procedimiento para solicitarla.</p></details>
+      </div>
+    </section>
+    <div class="notice"><strong>Versión de demostración:</strong> esta web todavía no procesa pagos ni pedidos reales. La imagen es un recorte de la captura que has compartido; antes de vender, sustitúyela por fotografías propias o autorizadas y completa precio, características, envío, devoluciones y datos legales.</div>
+  </main>
+  <footer>© 2026 Navilux · Tienda online de demostración</footer>
+  <script>
+    let cart = 0;
+    function addToCart(){
+      cart++;
+      document.getElementById('count').textContent = cart;
+      const msg = document.getElementById('cartmsg');
+      msg.style.display = 'block';
+      msg.textContent = 'Añadido a la cesta de demostración (' + cart + '). Los pagos todavía no están conectados.';
+    }
+  </script>
+</body>
+</html>
